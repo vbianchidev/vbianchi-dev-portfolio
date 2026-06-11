@@ -5,9 +5,9 @@ import { BlogPostComponent } from './blog/ui/blog-post/blog-post.component';
 import { BlogListComponent } from './blog/ui/blog-list/blog-list.component';
 
 export const routes: Routes = [
-  { path: '',        component: HomeComponent },
-  { path: 'perfil',  component: ProfileComponent },
-  { path: 'blog',    component: BlogListComponent },
+  { path: '', component: HomeComponent },
+  { path: 'perfil', component: ProfileComponent },
+  { path: 'blog', component: BlogListComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
-  { path: '**',      redirectTo: '' }
+  { path: '**', redirectTo: '' },
 ];

@@ -14,7 +14,7 @@ export class BlogListComponent implements OnInit {
   private readonly blogService: BlogService = inject(BlogService);
 
   protected readonly posts = signal<PostMeta[]>([]);
- 
+
   public ngOnInit(): void {
     this.posts.set(this.blogService.getPosts());
   }

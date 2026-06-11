@@ -19,10 +19,9 @@ export class BlogPostComponent implements OnInit {
   protected readonly loading = signal<boolean>(true);
   protected readonly highlighted = signal<boolean>(true);
 
-
   public ngOnInit(): void {
     const slug = this.activatedRoute.snapshot.paramMap.get('slug')!;
-    this.blogService.getPostContent(slug).subscribe(md => {
+    this.blogService.getPostContent(slug).subscribe((md) => {
       this.content.set(marked(md) as string);
       this.loading.set(false);
       this.highlighted.set(false);

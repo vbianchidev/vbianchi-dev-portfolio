@@ -10,6 +10,6 @@ import { NavComponent } from './@shared/components/nav/nav.component';
     <main class="container">
       <router-outlet></router-outlet>
     </main>
-  `
+  `,
 })
 export class App {}

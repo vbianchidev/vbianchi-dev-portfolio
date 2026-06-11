@@ -2,16 +2,15 @@
   <h1>Blog</h1>
   <ul class="post-list">
     @for (post of posts(); track $index) {
-        <li  class="post-card">
-            <span class="post-card__date">{{ post.date | date:'dd/MM/yyyy' }}</span>
-            <a [routerLink]="['/blog', post.slug]">
-                <h2>{{ post.title }}</h2>
-            </a>
-            <p>{{ post.summary }}</p>
-        </li>
+      <li class="post-card">
+        <span class="post-card__date">{{ post.date | date: 'dd/MM/yyyy' }}</span>
+        <a [routerLink]="['/blog', post.slug]">
+          <h2>{{ post.title }}</h2>
+        </a>
+        <p>{{ post.summary }}</p>
+      </li>
     } @empty {
-        <li>No posts!</li>
+      <li>No posts!</li>
     }
-
   </ul>
 </section>
