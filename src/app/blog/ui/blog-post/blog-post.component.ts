@@ -1,0 +1,38 @@
+import { Component, inject, OnInit, signal } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { marked } from 'marked';
+import { BlogService } from '../../data/blog-api.service';
+
+declare const Prism: any;
+
+@Component({
+  selector: 'app-blog-post',
+  imports: [],
+  templateUrl: './blog-post.component.html',
+  styleUrl: './blog-post.component.scss',
+})
+export class BlogPostComponent implements OnInit {
+  private readonly activatedRoute: ActivatedRoute = inject(ActivatedRoute);
+  private readonly blogService: BlogService = inject(BlogService);
+
+  protected readonly content = signal<string>('');
+  protected readonly loading = signal<boolean>(true);
+  protected readonly highlighted = signal<boolean>(true);
+
+
+  public ngOnInit(): void {
+    const slug = this.activatedRoute.snapshot.paramMap.get('slug')!;
+    this.blogService.getPostContent(slug).subscribe(md => {
+      this.content.set(marked(md) as string);
+      this.loading.set(false);
+      this.highlighted.set(false);
+    });
+  }
+
+  public ngAfterViewChecked(): void {
+    if (!this.loading() && !this.highlighted()) {
+      Prism.highlightAll();
+      this.highlighted.set(true);
+    }
+  }
+}

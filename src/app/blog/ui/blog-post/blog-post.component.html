@@ -1,0 +1,7 @@
+@if (loading()) {
+  <p>Carregando...</p>
+} @else {
+  <article class="post">
+    <div [innerHTML]="content()" class="prose"></div>
+  </article>
+}
