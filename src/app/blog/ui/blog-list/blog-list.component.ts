@@ -1,12 +1,13 @@
+import { DatePipe } from '@angular/common';
 import { Component, inject, OnInit, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 import { BlogService } from '../../data/blog-api.service';
 import { PostMeta } from '../../model/post-meta.interface';
-import { DatePipe } from '@angular/common';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
-  imports: [RouterLink, DatePipe],
+  imports: [RouterLink, DatePipe, TranslatePipe],
   templateUrl: './blog-list.component.html',
   styleUrl: './blog-list.component.scss',
 })

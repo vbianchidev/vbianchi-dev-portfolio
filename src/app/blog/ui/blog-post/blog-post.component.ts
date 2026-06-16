@@ -1,4 +1,5 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { AfterViewChecked, Component, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { marked } from 'marked';
 import { BlogService } from '../../data/blog-api.service';
@@ -9,9 +10,8 @@ declare const Prism: any;
   selector: 'app-blog-post',
   imports: [],
   templateUrl: './blog-post.component.html',
-  styleUrl: './blog-post.component.scss',
 })
-export class BlogPostComponent implements OnInit {
+export class BlogPostComponent implements OnInit, AfterViewChecked {
   private readonly activatedRoute: ActivatedRoute = inject(ActivatedRoute);
   private readonly blogService: BlogService = inject(BlogService);
 

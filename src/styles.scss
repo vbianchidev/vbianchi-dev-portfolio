@@ -3,7 +3,7 @@
   --color-bg: #ffffff;
   --color-text: #1a1a1a;
   --color-muted: #666;
-  --color-accent: #6366f1;
+  --color-accent: #004a77;
   --color-border: #e5e7eb;
   --font-sans: 'Inter', system-ui, sans-serif;
   --radius: 8px;
@@ -46,36 +46,6 @@ body {
   }
 }
 
-/* BLOG */
-.post-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.post-card {
-  padding: 1.5rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  &__date {
-    font-size: 0.8rem;
-    color: var(--color-muted);
-  }
-  h2 {
-    font-size: 1.2rem;
-    margin: 0.3rem 0 0.5rem;
-  }
-  a {
-    text-decoration: none;
-    color: var(--color-text);
-    &:hover {
-      color: var(--color-accent);
-    }
-  }
-}
-
-/* PROSE (markdown) */
 .prose {
   h1,
   h2,
