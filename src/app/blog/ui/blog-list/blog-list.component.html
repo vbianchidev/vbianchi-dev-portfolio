@@ -1,10 +1,6 @@
 <h1>{{ 'BLOG' | translate }}</h1>
 
 <section class="blog">
-  <p class="blog__description">
-    {{ 'BLOG_DESCRIPTION' | translate }}
-  </p>
-
   <ul class="blog__post-list">
     @for (post of posts(); track $index) {
       <li class="post-card">
