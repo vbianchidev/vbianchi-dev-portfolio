@@ -1,4 +1,4 @@
-<h2>{{ 'EXPERIENCE' }}</h2>
+<h2>{{ 'EXPERIENCE' | translate }}</h2>
 
 <div class="timeline">
   @for (item of experiences(); track $index) {
@@ -16,13 +16,13 @@
           {{ ',' }}
           @switch (item.mode) {
             @case (1) {
-              {{ ' REMOTE' }}
+              {{ ' REMOTE' | translate }}
             }
             @case (2) {
-              {{ ' HYBRID' }}
+              {{ ' HYBRID' | translate }}
             }
             @case (3) {
-              {{ 'FACE-TO-FACE' }}
+              {{ 'ON-SITE' | translate }}
             }
           }
         </span>

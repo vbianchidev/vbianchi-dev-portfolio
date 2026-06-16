@@ -1,7 +1,9 @@
 import { Component, computed, input } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profile-avatar',
+  imports: [TranslatePipe],
   templateUrl: './profile-avatar.component.html',
   styleUrl: './profile-avatar.component.scss',
 })

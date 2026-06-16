@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { NavComponent } from './@shared/components/nav/nav.component';
 
 @Component({
@@ -12,4 +13,10 @@ import { NavComponent } from './@shared/components/nav/nav.component';
     </main>
   `,
 })
-export class App {}
+export class App {
+  private translate: TranslateService = inject(TranslateService);
+
+  constructor() {
+    this.translate.addLangs(['pt-br', 'en-us']);
+  }
+}

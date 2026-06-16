@@ -1,8 +1,12 @@
 @let state = profileState();
 
-<section class="profile">
-  <app-profile-avatar [gitHubUrl]="state.profile.github.url" />
-  <app-profile-bio [bio]="state.profile.bio" [name]="state.profile.name" />
-  <app-profile-skill [skills]="state.profile.skills" />
-  <app-profile-experience [experiences]="state.profile.experiences" />
-</section>
+@if (state.isLoading) {
+  <p>Loading...</p>
+} @else {
+  <section class="profile">
+    <app-profile-avatar [gitHubUrl]="state.profile.github.url" />
+    <app-profile-bio [bio]="state.profile.bio" [name]="state.profile.name" />
+    <app-profile-skill [skills]="state.profile.skills" />
+    <app-profile-experience [experiences]="state.profile.experiences" />
+  </section>
+}

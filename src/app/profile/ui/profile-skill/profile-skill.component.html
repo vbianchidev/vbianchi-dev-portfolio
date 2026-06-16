@@ -1,11 +1,11 @@
-<h2>{{ 'SKILLS' }}</h2>
+<h2>{{ 'SKILLS' | translate }}</h2>
 
 <div class="skills">
   <ul class="skills">
     @for (skill of skills(); track $index) {
       <li>{{ skill }}</li>
     } @empty {
-      <li>{{ 'NO-SKILL' }}</li>
+      <li>{{ 'NO-SKILL' | translate }}</li>
     }
   </ul>
 </div>
