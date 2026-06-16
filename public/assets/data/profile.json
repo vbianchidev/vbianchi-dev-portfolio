@@ -1,11 +1,14 @@
 {
   "name": "Vitor Bianchi da Silva",
   "bio": "Desenvolvedor web fullstack com 7 anos de experiência e especialização em front-end. Atuei em diversos projetos, as minhas principais funções exercidas foram: criação de módulos e componentes reutilizáveis, correções de problemas em ambiente produtivo, revisão de código e otimização de telas para grandes volumes de dados.",
+  "email": "vitor.biansil@gmail.com",
+  "phone": "+55 (17) 99781-7534",
+  "linkedin": "https://www.linkedin.com/in/vbianchidev/",
   "github": {
     "username": "vbianchidev",
     "url": "https://github.com/vbianchidev"
   },
-  "skills": ["JavaScript", "TypeScript", "Angular"],
+  "skills": ["JavaScript", "TypeScript", "Angular", "Node.js", "HTML", "CSS", "Figma"],
   "experiences": [
     {
       "company": "Selbetti Tecnologia",

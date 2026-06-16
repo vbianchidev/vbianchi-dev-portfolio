@@ -2,13 +2,8 @@ import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-profile-bio',
-  imports: [],
-  template: `
-    <h1>{{ name() }}</h1>
-    <p class="profile__bio">
-      {{ bio() }}
-    </p>
-  `,
+  templateUrl: './profile-bio.component.html',
+  styleUrl: './profile-bio.component.scss',
 })
 export class ProfileBioComponent {
   public readonly name = input.required<string>();

@@ -13,7 +13,6 @@ import { ProfileSkillComponent } from './profile-skill/profile-skill.component';
     ProfileExperienceComponent,
   ],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss',
 })
 export class ProfileComponent implements OnInit {
   private readonly profileStoreService: ProfileStoreService = inject(ProfileStoreService);

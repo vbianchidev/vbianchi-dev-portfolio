@@ -5,42 +5,8 @@ import { ProfileExperience } from '../../model/profile-experience.interface';
 @Component({
   selector: 'app-profile-experience',
   imports: [DatePipe],
-  template: `
-    <h2>{{ 'EXPERIENCE' }}</h2>
-
-    <div class="timeline">
-      @for (item of experiences(); track $index) {
-        <div class="timeline__item">
-          <div class="timeline__meta">
-            <div class="timeline__role">
-              <span class="timeline__company">{{ item.company }} /&nbsp;</span>
-              <strong class="timeline__title">{{ item.role }}</strong>
-            </div>
-
-            <span class="timeline__date">
-              {{ item.startDate | date: "MMM 'de' y" }}
-              {{ '-' }}
-              {{ item.endDate | date: "MMM 'de' y" }}
-              {{ ',' }}
-              @switch (item.mode) {
-                @case (1) {
-                  {{ ' REMOTE' }}
-                }
-                @case (2) {
-                  {{ ' HYBRID' }}
-                }
-                @case (3) {
-                  {{ 'FACE-TO-FACE' }}
-                }
-              }
-            </span>
-          </div>
-
-          <p>{{ item.description }}</p>
-        </div>
-      }
-    </div>
-  `,
+  templateUrl: './profile-experience.component.html',
+  styleUrl: './profile-experience.component.scss',
 })
 export class ProfileExperienceComponent {
   public readonly experiences = input.required<ProfileExperience[]>();
