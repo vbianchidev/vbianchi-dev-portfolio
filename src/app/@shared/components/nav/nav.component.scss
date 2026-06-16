@@ -1,4 +1,11 @@
 :host {
+  @media (max-width: 768px) {
+    .nav {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -19,6 +26,7 @@
     &__links {
       list-style: none;
       display: flex;
+      align-items: center;
       gap: 1.5rem;
     }
     &__links a {
