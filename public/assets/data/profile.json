@@ -1,0 +1,47 @@
+{
+  "name": "Vitor Bianchi da Silva",
+  "bio": "Desenvolvedor web fullstack com 7 anos de experiência e especialização em front-end. Atuei em diversos projetos, as minhas principais funções exercidas foram: criação de módulos e componentes reutilizáveis, correções de problemas em ambiente produtivo, revisão de código e otimização de telas para grandes volumes de dados.",
+  "github": {
+    "username": "vbianchidev",
+    "url": "https://github.com/vbianchidev"
+  },
+  "skills": ["JavaScript", "TypeScript", "Angular"],
+  "experiences": [
+    {
+      "company": "Selbetti Tecnologia",
+      "role": "Engenheiro de Software",
+      "startDate": "2024-06-01",
+      "endDate": "2026-06-01",
+      "mode": 1,
+      "description": "Minha principal função era a evolução e manutenção de produtos SaaS voltados ao varejo. Responsável pela criação de novas features, migração de versões Angular e otimização de interfaces com a utilização de signals.",
+      "activities": ["Atividade 1", "Atividade 2"]
+    },
+    {
+      "company": "Informa Solutions",
+      "role": "Analista Programador",
+      "startDate": "2022-04-01",
+      "endDate": "2024-06-01",
+      "mode": 1,
+      "description": "Minha principal função foi a criação e implementação de um design system baseado em Material Design para uma aplicação SaaS para emissoras de rádio. Criação de componentes reutilizáveis, refatoração e otimização de telas e prototipação com figma.",
+      "activities": ["Atividade 1", "Atividade 2"]
+    },
+    {
+      "company": "Integrativa",
+      "role": "Desenvolvedor Web Full Stack",
+      "startDate": "2021-07-01",
+      "endDate": "2022-04-01",
+      "mode": 2,
+      "description": "Minha principal função foi a execução de atividades de correção de bugs e desenvolvimento de novas features.",
+      "activities": ["Atividade 1", "Atividade 2"]
+    },
+    {
+      "company": "Maquinaweb",
+      "role": "Designer Web",
+      "startDate": "2018-10-30",
+      "endDate": "2021-07-01",
+      "mode": 3,
+      "description": "Atuando como Web Designer, minhas principais atividades realizadas foram a criação de sites institucionais, landing pages e manutenção de um sistema de CMS.",
+      "activities": ["Atividade 1", "Atividade 2"]
+    }
+  ]
+}
