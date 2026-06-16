@@ -46,5 +46,31 @@
       "description": "Atuando como Web Designer, minhas principais atividades realizadas foram a criação de sites institucionais, landing pages e manutenção de um sistema de CMS.",
       "activities": ["Atividade 1", "Atividade 2"]
     }
+  ],
+  "education": [
+    {
+      "school": "Anhanguera Educacional",
+      "course": "Pós-graduação em Engenharia de Software com Ênfase em Qualidade e Testes de Software",
+      "startDate": "2022-11-01",
+      "endDate": "2023-09-01"
+    },
+    {
+      "school": "Anhanguera Educacional",
+      "course": "Pós-graduação em Arquitetura de Software",
+      "startDate": "2022-11-01",
+      "endDate": "2023-09-01"
+    },
+    {
+      "school": "IFSP Campus Catanduva",
+      "course": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+      "startDate": "2017-01-01",
+      "endDate": "2021-12-31"
+    },
+    {
+      "school": "IFSP Campus Catanduva",
+      "course": "Técnico em Redes de Computadores",
+      "startDate": "2014-01-01",
+      "endDate": "2016-12-31"
+    }
   ]
 }

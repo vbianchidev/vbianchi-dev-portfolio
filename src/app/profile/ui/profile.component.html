@@ -5,8 +5,16 @@
 } @else {
   <section class="profile">
     <app-profile-avatar [gitHubUrl]="state.profile.github.url" />
-    <app-profile-bio [bio]="state.profile.bio" [name]="state.profile.name" />
+    <app-profile-bio
+      [bio]="state.profile.bio"
+      [name]="state.profile.name"
+      [github]="state.profile.github"
+      [phone]="state.profile.phone"
+      [email]="state.profile.email"
+      [linkedin]="state.profile.linkedin"
+    />
     <app-profile-skill [skills]="state.profile.skills" />
     <app-profile-experience [experiences]="state.profile.experiences" />
+    <app-profile-education [education]="state.profile.education" />
   </section>
 }

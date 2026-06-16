@@ -1,0 +1,21 @@
+<h2>{{ 'EDUCATION' | translate }}</h2>
+
+<div class="timeline">
+  @for (item of education(); track $index) {
+    <div class="timeline__item">
+      <div class="timeline__meta">
+        <div class="timeline__role">
+          <span class="timeline__company">{{ item.school }} /&nbsp;</span>
+          <strong class="timeline__title">{{ item.course }}</strong>
+        </div>
+
+        <span class="timeline__date">
+          {{ item.startDate | date: "MMM 'de' y" }}
+          {{ '-' }}
+          {{ item.endDate | date: "MMM 'de' y" }}
+          {{ ',' }}
+        </span>
+      </div>
+    </div>
+  }
+</div>

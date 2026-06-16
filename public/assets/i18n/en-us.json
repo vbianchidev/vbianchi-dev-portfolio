@@ -8,5 +8,10 @@
   "NO-SKILLS": "No technical skills listed.",
   "BLOG": "Blog",
   "HOME": "Home",
-  "PROFILE": "Profile"
+  "PROFILE": "Profile",
+  "HERO": {
+    "TITLE": "Hello, i am",
+    "SUBTITLE": "Full-stack web developer with 7 years of experience and specialization in front-end development. I have worked on various projects, where my main responsibilities included: creating reusable modules and components, fixing problems in a production environment, code review, and optimizing screens for large volumes of data."
+  },
+  "CURRICULUM-DOWLOAD": "Download CV"
 }

@@ -3,3 +3,24 @@
 <p class="profile__bio">
   {{ bio() }}
 </p>
+
+<h2>Contato</h2>
+
+<ul class="contact-list">
+  <li>
+    <i class="fa-solid fa-envelope"></i>
+    <a [href]="'mailto:' + email()">{{ email() }}</a>
+  </li>
+  <li>
+    <i class="fa-solid fa-phone"></i>
+    <a [href]="'tel:' + phone()">{{ phone() }}</a>
+  </li>
+  <li>
+    <i class="fa-brands fa-linkedin"></i>
+    <a [href]="linkedin()" target="_blank" rel="noopener">linkedin.com/in/vbianchidev</a>
+  </li>
+  <li>
+    <i class="fa-brands fa-github"></i>
+    <a [href]="github().url" target="_blank" rel="noopener">{{ github().username }}</a>
+  </li>
+</ul>
