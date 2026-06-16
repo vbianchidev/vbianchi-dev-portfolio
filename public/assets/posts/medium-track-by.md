@@ -8,7 +8,7 @@ A função "trackBy" oferece a possibilidade de definir uma lógica personalizad
 
 Vamos considerar o exemplo de uma lista com a interface "Item":
 
-```ts
+```typescript
 interface Item {
   id: number;
   name: string;
@@ -23,7 +23,7 @@ items: Item[] = [
 
 Ao invés de utilizar a referência do objeto como chave de rastreamento (o que seria inadequado, já que as referências dos objetos mudam a cada atualização), é possível utilizar a propriedade "id" como chave de rastreamento. Para isso, é necessário criar uma função "trackByFn" no componente:
 
-```ts
+```typescript
 trackByFn(index: number, item: Item) {
   return item.id;
 }

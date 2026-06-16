@@ -1,4 +1,3 @@
-import { JsonPipe } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { ProfileStoreService } from '../data/profile-store.service';
 import { ProfileAvatarComponent } from './profile-avatar/profile-avatar.component';
@@ -12,7 +11,6 @@ import { ProfileSkillComponent } from './profile-skill/profile-skill.component';
     ProfileAvatarComponent,
     ProfileBioComponent,
     ProfileExperienceComponent,
-    JsonPipe,
   ],
   templateUrl: './profile.component.html',
 })

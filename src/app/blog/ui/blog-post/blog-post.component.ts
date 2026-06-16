@@ -1,14 +1,17 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { AfterViewChecked, Component, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { marked } from 'marked';
 import { BlogService } from '../../data/blog-api.service';
 
-declare const Prism: any;
+import * as Prism from 'prismjs';
+
+import 'prismjs/components/prism-css';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-markup';
+import 'prismjs/components/prism-typescript';
 
 @Component({
   selector: 'app-blog-post',
-  imports: [],
   templateUrl: './blog-post.component.html',
 })
 export class BlogPostComponent implements OnInit, AfterViewChecked {
@@ -24,7 +27,10 @@ export class BlogPostComponent implements OnInit, AfterViewChecked {
     this.blogService.getPostContent(slug).subscribe((md) => {
       this.content.set(marked(md) as string);
       this.loading.set(false);
-      this.highlighted.set(false);
+
+      queueMicrotask(() => {
+        Prism.highlightAll();
+      });
     });
   }
 
