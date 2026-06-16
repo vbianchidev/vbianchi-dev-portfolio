@@ -43,6 +43,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/vbianchi-dev-portfolio/",
               "budgets": [
                 {
                   "type": "initial",
