@@ -5,5 +5,8 @@
   "ON-SITE": "On-Site",
   "HYBRID": "Hybrid",
   "SKILLS": "Technical Skills",
-  "NO-SKILLS": "No technical skills listed."
+  "NO-SKILLS": "No technical skills listed.",
+  "BLOG": "Blog",
+  "HOME": "Home",
+  "PROFILE": "Profile"
 }

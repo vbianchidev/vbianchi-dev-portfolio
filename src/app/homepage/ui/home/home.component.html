@@ -1,4 +1,25 @@
 <section class="hero">
-  <h1>Olá, eu sou <span class="highlight">Seu Nome</span> 👋</h1>
-  <p class="hero__sub">Desenvolvedor de software apaixonado por criar soluções elegantes.</p>
+  <h1>{{ 'HERO.TITLE' | translate }} <span class="highlight">Vitor Bianchi</span>.</h1>
+  <p class="hero__sub">{{ 'HERO.SUBTITLE' | translate }}</p>
+</section>
+
+<section class="projects">
+  <h2 class="projects__title">Projetos</h2>
+  <p class="projects__sub">Uma seleção do que já construí e desenhei.</p>
+
+  <div class="projects__grid">
+    @for (project of projects; track project.url) {
+      <a class="project-card" [href]="project.url" target="_blank" rel="noopener">
+        <div class="project-card__icon" [ngClass]="'project-card__icon--' + project.type">
+          <i [class]="iconMap[project.type]"></i>
+        </div>
+        <div class="project-card__body">
+          <span class="project-card__type">{{ labelMap[project.type] }}</span>
+          <h3 class="project-card__name">{{ project.name }}</h3>
+          <p class="project-card__desc">{{ project.desc }}</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square project-card__arrow"></i>
+      </a>
+    }
+  </div>
 </section>

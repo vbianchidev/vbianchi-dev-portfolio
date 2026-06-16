@@ -1,12 +1,16 @@
 <nav class="nav">
-  <a class="nav__logo" routerLink="/">{{ 'Seu Nome' }}</a>
+  <a class="nav__logo" routerLink="/">{{ 'Vitor Bianchi' }}</a>
   <ul class="nav__links">
     <li>
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-        Home
+        {{ 'HOME' | translate }}
       </a>
     </li>
-    <li><a routerLink="/profile" routerLinkActive="active">Perfil</a></li>
-    <li><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
+    <li>
+      <a routerLink="/profile" routerLinkActive="active">{{ 'PROFILE' | translate }}</a>
+    </li>
+    <li>
+      <a routerLink="/blog" routerLinkActive="active">{{ 'BLOG' | translate }}</a>
+    </li>
   </ul>
 </nav>

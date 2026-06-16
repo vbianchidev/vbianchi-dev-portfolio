@@ -1,0 +1,109 @@
+:host {
+  .hero {
+    padding: 5rem 0;
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    &__sub {
+      color: var(--color-muted);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    &__actions {
+      display: flex;
+      gap: 1rem;
+    }
+    .highlight {
+      color: var(--color-accent);
+    }
+  }
+
+  /* PROJECTS */
+  .projects {
+    margin-top: 4rem;
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+    &__sub {
+      color: var(--color-muted);
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+  }
+
+  .project-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--color-text);
+    transition:
+      border-color 0.2s,
+      box-shadow 0.2s;
+    position: relative;
+
+    &:hover {
+      border-color: var(--color-accent);
+      box-shadow: 0 4px 16px rgba(99, 102, 241, 0.08);
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      &--github {
+        background: #f3f4f6;
+        color: #1a1a1a;
+      }
+      &--figma {
+        background: #fff0eb;
+        color: #f24e1e;
+      }
+    }
+
+    &__body {
+      flex: 1;
+      min-width: 0;
+    }
+    &__type {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-muted);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    &__name {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    &__desc {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      line-height: 1.5;
+    }
+    &__arrow {
+      font-size: 1rem;
+      color: var(--color-muted);
+      align-self: flex-start;
+      flex-shrink: 0;
+    }
+  }
+}
