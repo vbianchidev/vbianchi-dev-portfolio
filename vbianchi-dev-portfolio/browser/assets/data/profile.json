@@ -1,0 +1,76 @@
+{
+  "name": "Vitor Bianchi da Silva",
+  "bio": "Desenvolvedor web fullstack com 7 anos de experiência e especialização em front-end. Atuei em diversos projetos, as minhas principais funções exercidas foram: criação de módulos e componentes reutilizáveis, correções de problemas em ambiente produtivo, revisão de código e otimização de telas para grandes volumes de dados.",
+  "email": "vitor.biansil@gmail.com",
+  "phone": "+55 (17) 99781-7534",
+  "linkedin": "https://www.linkedin.com/in/vbianchidev/",
+  "github": {
+    "username": "vbianchidev",
+    "url": "https://github.com/vbianchidev"
+  },
+  "skills": ["JavaScript", "TypeScript", "Angular", "Node.js", "HTML", "CSS", "Figma"],
+  "experiences": [
+    {
+      "company": "Selbetti Tecnologia",
+      "role": "Engenheiro de Software",
+      "startDate": "2024-06-01",
+      "endDate": "2026-06-01",
+      "mode": 1,
+      "description": "Minha principal função era a evolução e manutenção de produtos SaaS voltados ao varejo. Responsável pela criação de novas features, migração de versões Angular e otimização de interfaces com a utilização de signals.",
+      "activities": ["Atividade 1", "Atividade 2"]
+    },
+    {
+      "company": "Informa Solutions",
+      "role": "Analista Programador",
+      "startDate": "2022-04-01",
+      "endDate": "2024-06-01",
+      "mode": 1,
+      "description": "Minha principal função foi a criação e implementação de um design system baseado em Material Design para uma aplicação SaaS para emissoras de rádio. Criação de componentes reutilizáveis, refatoração e otimização de telas e prototipação com figma.",
+      "activities": ["Atividade 1", "Atividade 2"]
+    },
+    {
+      "company": "Integrativa",
+      "role": "Desenvolvedor Web Full Stack",
+      "startDate": "2021-07-01",
+      "endDate": "2022-04-01",
+      "mode": 2,
+      "description": "Minha principal função foi a execução de atividades de correção de bugs e desenvolvimento de novas features.",
+      "activities": ["Atividade 1", "Atividade 2"]
+    },
+    {
+      "company": "Maquinaweb",
+      "role": "Designer Web",
+      "startDate": "2018-10-30",
+      "endDate": "2021-07-01",
+      "mode": 3,
+      "description": "Atuando como Web Designer, minhas principais atividades realizadas foram a criação de sites institucionais, landing pages e manutenção de um sistema de CMS.",
+      "activities": ["Atividade 1", "Atividade 2"]
+    }
+  ],
+  "education": [
+    {
+      "school": "Anhanguera Educacional",
+      "course": "Pós-graduação em Engenharia de Software com Ênfase em Qualidade e Testes de Software",
+      "startDate": "2022-11-01",
+      "endDate": "2023-09-01"
+    },
+    {
+      "school": "Anhanguera Educacional",
+      "course": "Pós-graduação em Arquitetura de Software",
+      "startDate": "2022-11-01",
+      "endDate": "2023-09-01"
+    },
+    {
+      "school": "IFSP Campus Catanduva",
+      "course": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+      "startDate": "2017-01-01",
+      "endDate": "2021-12-31"
+    },
+    {
+      "school": "IFSP Campus Catanduva",
+      "course": "Técnico em Redes de Computadores",
+      "startDate": "2014-01-01",
+      "endDate": "2016-12-31"
+    }
+  ]
+}
